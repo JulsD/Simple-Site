@@ -1,0 +1,289 @@
+* {margin:0; padding:0; border:0; outline: 0;}
+a {text-decoration: none; color: inherit;}
+a:hover {color: #000;}
+
+body {
+	font: 14px Arial, Helvetica, sans-serif;
+	text-shadow: -1px 0px 1px #a7a6ac;
+	filter: Shadow(Color='#a7a6ac', Direction=270, Strength=2);
+	color: #5f5d67;
+
+	background-image: url(../img/background.png);
+	background-repeat: repeat-x; 
+
+	text-align: center;
+	width: 1024px;
+	height: 1025px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+	display: none;
+}
+
+/*Wrapper - start*/
+.wrapper {
+	padding: 25px 0;
+	width: 755px;
+	margin: 0 auto;
+}
+
+.wrapper h1 {
+	display: none;
+}
+
+.wrapper a img {
+	margin-left: 17px;
+}
+
+
+/*Nav - start*/
+.Nav {
+	text-align: justify;
+	line-height: 0;
+
+	/* Opera Presto */
+	font-size: 1px;
+ 
+    /* IE6-7 */
+    text-justify: newspaper; 
+    zoom: 1;
+    text-align-last: justify;
+
+    background-color: #fff;
+}
+
+.Nav:after {
+    width: 100%;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    content: "";
+    display: inline-block;
+}
+
+.Nav li {
+	display: inline-block;
+    text-align: left;
+ 
+    /* Восстанавливаем обнулённые свойства */
+    line-height: normal;
+    font-size: 14px;
+ 
+    /* Opera Presto */
+    vertical-align: top;
+ 
+    /* IE6-7 */
+    //display : inline;
+    //zoom : 1;
+}
+
+/*TopNav - start*/
+#topNav {
+	margin-top: 8px;
+	border: 1px solid #f6f6f6;
+	border-bottom: none;
+}
+
+#topNav li  {
+    border-right: 1px solid #f6f6f6;
+	line-height: 33px;
+	position: relative;
+}
+
+#topNav li.lastNavli {
+	border-right: 0px solid #f6f6f6;
+}
+
+#topNav li a {
+	display: inline-block;
+	height: 33px;
+	padding: 0 23px;
+	margin: 0 6px;
+}
+
+#topNav li:hover a {
+	background-image: url(../img/underline.png);
+	background-repeat: repeat-x;
+}
+
+/*Dropdown - start*/
+#topNav li .dropdown {
+	display: none;
+	position: absolute; /* что бы подвинуть объект прямо под пункт меню */
+	top: 33px;
+	padding-top: 3px;
+	z-index: 999;
+	left: -5px;
+}
+
+#topNav li .dropdown ul { /* параметры для первого подуровня */
+	width: 144px;
+	background:#fff;
+	border: 1px solid #8696cc;
+	padding: 6px;
+	font-size: 10px;
+	-webkit-box-shadow: 5px 5px 10px #99918f;
+	-moz-box-shadow: 5px 5px 10px #99918f;
+	box-shadow: 5px 5px 10px #99918f;
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color='#99918f', strength=10);
+}
+
+/* убираем лишние параметры от #topNav li для подуровней */
+#topNav li .dropdown li { 
+	border: none;
+	border-bottom: 1px solid #ebf3fc; 
+	width: 143px; 
+	margin: 0;
+	line-height: 16px;
+}
+
+#topNav li .dropdown li a {
+	text-shadow: none;
+	height: 16px;
+	font-size: 10px;
+	line-height: 16px;
+	padding: 0;
+	margin: 0;
+	width: 140px;
+}
+
+#topNav li .dropdown li a:hover {
+	text-decoration: none;
+}
+/*Dropdown - end*/
+
+/*TopNav - end*/
+
+
+/*Bottom-Nav - start */
+#bottomNav {
+	padding: 0 60px;
+}
+
+#bottomNav li {
+	line-height: 30px;	
+}
+
+#bottomNav a {
+	display: inline-block;
+	height: 30px;
+	padding: 0 10px;
+}
+
+#bottomNav a:hover {
+	background-image: url(../img/upline.png);
+	background-repeat: repeat-x;
+}
+/*Bottom-Nav - end*/
+
+
+/*Slider - start*/
+#slider {
+	border-top: 3px solid #9dc5f0;
+	border-bottom: 3px solid #9dc5f0;
+	width: 100%;
+	height: 313px;
+	overflow: hidden;
+	position: relative;
+}
+	#slider ul {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+		#slider li {
+			width: 754px;
+			height: 312px;
+			list-style: none;
+			float: left;
+		}
+/*Slider - end*/
+
+/*Content - start*/
+#content {
+	margin-top: 8px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.content-1, .content-2 {
+	background-color: #fff;
+}
+
+
+.content-1 {
+	float:left;
+	width: 478px;
+}
+	
+
+.content-2 {
+	width: 267px;
+	float: left;
+	margin: 0 0 0 487px;
+}
+
+#content .article, #content .contact{
+	display: inline-block;
+	float: left;
+	padding: 30px 30px 46px 30px;
+}
+
+#content h2 {
+	margin-bottom: 18px;
+}
+
+#content p {
+	line-height: 17px;
+	margin-bottom: 20px;
+}
+
+.article {
+	float:left;
+	width: 419px;
+	margin:0 0 0 -489px;
+	color: #555;
+}
+
+.article h2 {
+	font: 24px "Times New Roman", Times, serif;
+}
+
+.article p {
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+.article p span {
+	line-height: 21px;
+}
+
+#content .contact {
+	float:left;
+	width: 229px;
+	color: #333;
+	padding-right: 10px;
+}
+
+.contact h2 {
+	font: 24px Georgia, serif;
+}
+
+.contact p {
+	font: 14px "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*Content - end*/
+
+/*Footer - start*/
+#footer {
+	color: #b4b3b7;
+	text-align: left;
+	font-size: 12px;
+	margin: 12px 0 20px 0;
+}
+
+/*Footer - End*/
+
+/*Wrapper - end*/
